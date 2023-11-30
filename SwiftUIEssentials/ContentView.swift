@@ -8,14 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    
+    enum Types:String, CaseIterable, Identifiable{
+        
+        var id: String { rawValue }
+        
+        case list
+        case grid
+        case picker
+        case datePicker
+        case form
+        case spinner
+        case slider
+        case search
+        case alert
+        
+        @ViewBuilder
+        var destination:some View{
+            switch self{
+            case .list: ListView()
+            case .grid: GridView()
+            case .picker: PickerView()
+            case .datePicker: DatePickerView()
+            case .form: FormView()
+            case .spinner: SpinnerView()
+            case .slider: SliderView()
+            case .search: SearchView()
+            case .alert: AlertView()
+            }
         }
-        .padding()
+    }
+    
+    var body: some View {
+        NavigationView {
+                List(Types.allCases) { item in
+                    NavigationLink(destination: item.destination) {
+                      Text(item.rawValue.uppercased())
+                    }
+                }
+                .navigationTitle("SwiftUI Essentials")
+                .navigationBarTitleDisplayMode(.inline)
+
+        }
     }
 }
 
@@ -24,3 +58,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
