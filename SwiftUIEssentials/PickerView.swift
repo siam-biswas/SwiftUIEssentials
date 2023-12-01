@@ -1,29 +1,41 @@
 //
-//  PickerView.swift
+//  SegmentView.swift
 //  SwiftUIEssentials
 //
-//  Created by Siam Biswas on 11/29/23.
+//  Created by Siam Biswas on 11/30/23.
 //
 
 import SwiftUI
 
-struct PickerView: View {
+struct PickerView<Style:PickerStyle>: View {
     
-    @State private var selected: Int = 0
+    enum Color:String, CaseIterable, Identifiable{
+        var id:String { rawValue }
+        case red,green,blue
+    }
+    
+    
+    var style:Style
+    
+    @State var color:Color = .red
     
     var body: some View {
-        Picker("Numbers", selection: $selected) {
-            ForEach(0..<10) { item in
-                Text("\(item)").tag(item)
+        VStack {
+            Picker("Pick a color?", selection: $color) {
+                ForEach(Color.allCases){ item in
+                    Text(item.rawValue.uppercased()).tag(item)
+                }
             }
+            .pickerStyle(style)
+            Text("Value: \(color.rawValue)")
         }
-        .pickerStyle(.inline)
+        .padding(20)
         .navigationTitle("Picker View")
     }
 }
 
 struct PickerView_Previews: PreviewProvider {
     static var previews: some View {
-        PickerView()
+        PickerView(style: .inline)
     }
 }

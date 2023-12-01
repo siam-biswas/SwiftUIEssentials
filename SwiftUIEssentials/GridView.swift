@@ -50,7 +50,7 @@ struct GridView: View {
                     }
                 }
             }
-            .navigationTitle("SwiftUI Essentials")
+            .navigationTitle("Grid View")
     }
 }
 

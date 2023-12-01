@@ -8,31 +8,31 @@
 import SwiftUI
 
 struct SearchView: View {
-    let names = ["Holly", "Josh", "Rhonda", "Ted"]
-        @State private var searchText = ""
+    
+    let names = ["Holly", "Josh", "Rhonda", "Ted","Zen","Apple","Banana","Cup"]
+    @State private var searchText = ""
     
     var searchResults: [String] {
-            if searchText.isEmpty {
-                return names
-            } else {
-                return names.filter { $0.contains(searchText) }
-            }
+        if searchText.isEmpty {
+            return names
+        } else {
+            return names.filter { $0.contains(searchText) }
         }
-
+    }
+    
     var body: some View {
-        NavigationStack{
-            List {
-                ForEach(searchResults, id: \.self) { name in
-                    Text(name)
-                }
+        List {
+            ForEach(searchResults, id: \.self) { name in
+                Text(name)
             }
         }
-        .searchable(text: $searchText) {
+        .listStyle(.plain)
+        .searchable(text: $searchText,placement: .navigationBarDrawer(displayMode: .always)) {
             ForEach(searchResults, id: \.self) { result in
-                Text("Are you looking for \(result)?").searchCompletion(result)
+                Text("\(result)").searchCompletion(result)
             }
         }
-        .navigationTitle("Contacts")
+        .navigationTitle("Search View")
     }
 }
 

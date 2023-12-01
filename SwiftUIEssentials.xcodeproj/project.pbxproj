@@ -12,7 +12,6 @@
 		631A1EB62B18632C00B996E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631A1EB52B18632C00B996E3 /* Assets.xcassets */; };
 		631A1EB92B18632C00B996E3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 631A1EB82B18632C00B996E3 /* Preview Assets.xcassets */; };
 		631A1EC02B186B4800B996E3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1EBF2B186B4800B996E3 /* ListView.swift */; };
-		631A1EC22B1876DF00B996E3 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1EC12B1876DF00B996E3 /* PickerView.swift */; };
 		631A1EC42B18792400B996E3 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1EC32B18792400B996E3 /* DatePickerView.swift */; };
 		631A1EC62B187A4800B996E3 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1EC52B187A4800B996E3 /* SliderView.swift */; };
 		631A1EC82B187BB000B996E3 /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1EC72B187BB000B996E3 /* SpinnerView.swift */; };
@@ -20,6 +19,10 @@
 		631A1ECC2B1880D700B996E3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1ECB2B1880D700B996E3 /* AlertView.swift */; };
 		631A1ECE2B18827800B996E3 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1ECD2B18827800B996E3 /* GridView.swift */; };
 		631A1ED02B18828A00B996E3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1ECF2B18828A00B996E3 /* SearchView.swift */; };
+		631A1ED22B19964D00B996E3 /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1ED12B19964D00B996E3 /* PickerView.swift */; };
+		631A1ED42B19998400B996E3 /* SheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1ED32B19998400B996E3 /* SheetView.swift */; };
+		631A1ED62B19A89500B996E3 /* TabContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1ED52B19A89500B996E3 /* TabContainerView.swift */; };
+		631A1ED82B19CB6D00B996E3 /* BasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A1ED72B19CB6D00B996E3 /* BasicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +32,6 @@
 		631A1EB52B18632C00B996E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		631A1EB82B18632C00B996E3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		631A1EBF2B186B4800B996E3 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		631A1EC12B1876DF00B996E3 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		631A1EC32B18792400B996E3 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		631A1EC52B187A4800B996E3 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		631A1EC72B187BB000B996E3 /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,10 @@
 		631A1ECB2B1880D700B996E3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		631A1ECD2B18827800B996E3 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		631A1ECF2B18828A00B996E3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		631A1ED12B19964D00B996E3 /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
+		631A1ED32B19998400B996E3 /* SheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetView.swift; sourceTree = "<group>"; };
+		631A1ED52B19A89500B996E3 /* TabContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContainerView.swift; sourceTree = "<group>"; };
+		631A1ED72B19CB6D00B996E3 /* BasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +75,11 @@
 		631A1EB02B18632900B996E3 /* SwiftUIEssentials */ = {
 			isa = PBXGroup;
 			children = (
+				631A1EB72B18632C00B996E3 /* Preview Content */,
 				631A1EB12B18632900B996E3 /* SwiftUIEssentialsApp.swift */,
 				631A1EB32B18632900B996E3 /* ContentView.swift */,
 				631A1EB52B18632C00B996E3 /* Assets.xcassets */,
-				631A1EB72B18632C00B996E3 /* Preview Content */,
 				631A1EBF2B186B4800B996E3 /* ListView.swift */,
-				631A1EC12B1876DF00B996E3 /* PickerView.swift */,
 				631A1EC32B18792400B996E3 /* DatePickerView.swift */,
 				631A1EC52B187A4800B996E3 /* SliderView.swift */,
 				631A1EC72B187BB000B996E3 /* SpinnerView.swift */,
@@ -82,6 +87,10 @@
 				631A1ECB2B1880D700B996E3 /* AlertView.swift */,
 				631A1ECD2B18827800B996E3 /* GridView.swift */,
 				631A1ECF2B18828A00B996E3 /* SearchView.swift */,
+				631A1ED12B19964D00B996E3 /* PickerView.swift */,
+				631A1ED32B19998400B996E3 /* SheetView.swift */,
+				631A1ED52B19A89500B996E3 /* TabContainerView.swift */,
+				631A1ED72B19CB6D00B996E3 /* BasicView.swift */,
 			);
 			path = SwiftUIEssentials;
 			sourceTree = "<group>";
@@ -165,15 +174,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				631A1ECA2B187C1300B996E3 /* FormView.swift in Sources */,
-				631A1EC22B1876DF00B996E3 /* PickerView.swift in Sources */,
 				631A1ECC2B1880D700B996E3 /* AlertView.swift in Sources */,
 				631A1EC42B18792400B996E3 /* DatePickerView.swift in Sources */,
 				631A1EB42B18632900B996E3 /* ContentView.swift in Sources */,
+				631A1ED42B19998400B996E3 /* SheetView.swift in Sources */,
 				631A1EC62B187A4800B996E3 /* SliderView.swift in Sources */,
 				631A1EB22B18632900B996E3 /* SwiftUIEssentialsApp.swift in Sources */,
+				631A1ED82B19CB6D00B996E3 /* BasicView.swift in Sources */,
 				631A1EC02B186B4800B996E3 /* ListView.swift in Sources */,
 				631A1ECE2B18827800B996E3 /* GridView.swift in Sources */,
+				631A1ED62B19A89500B996E3 /* TabContainerView.swift in Sources */,
 				631A1EC82B187BB000B996E3 /* SpinnerView.swift in Sources */,
+				631A1ED22B19964D00B996E3 /* PickerView.swift in Sources */,
 				631A1ED02B18828A00B996E3 /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +323,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
